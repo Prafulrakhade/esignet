@@ -10,7 +10,7 @@ on:
         type: string
 
 jobs:
-  build-maven-esignet:
+  build_maven_esignet:
     uses: mosip/kattu/.github/workflows/maven-build.yml@master
     with:
       SERVICE_LOCATION: ./
@@ -24,8 +24,8 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
 
   # Build the Docker image manually if you want it without "-SNAPSHOT"
-  manual-build-dockers:
-    needs: build-maven-esignet
+  manual_build_dockers:
+    needs: build_maven_esignet
     if: ${{ github.event_name == 'workflow_dispatch' }}  # Runs only when triggered manually
     strategy:
       matrix:
