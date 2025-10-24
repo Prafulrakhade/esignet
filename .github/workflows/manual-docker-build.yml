@@ -12,7 +12,7 @@ on:
 jobs:
 
   build_maven_esignet_with_plugins:
-    uses: mosip/kattu/.github/workflows/maven-build.yml@master
+    uses: Prafulrakhade/kattu/.github/workflows/maven-build.yml@master
     with:
       SERVICE_LOCATION: ./esignet-with-plugins
       BUILD_ARTIFACT: esignet-with-plugins
