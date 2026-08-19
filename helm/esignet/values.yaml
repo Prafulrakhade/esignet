@@ -274,9 +274,7 @@ extraEnvVars: |
   - name: KEYMANAGER_PKCS11_MODULE_PATH
     value: /usr/local/lib/softhsm/libpkcs11-proxy.so
   - name: KEYMANAGER_PKCS11_TOKEN_LABEL
-    value: pkcs11-proxy
-  - name: KEYMANAGER_PKCS11_SLOT_ID
-    value: "0"
+    value: mosip-token
   - name: KEYMANAGER_PKCS11_PIN
     valueFrom:
       secretKeyRef:

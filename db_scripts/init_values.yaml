@@ -2,9 +2,9 @@ dbUserPasswords:
   dbuserPassword: ""
 
 databases:
-  mosip_esignet:
+  mosip_esignet_mock:
     enabled: true
-    host: "postgres-postgresql.postgres"
+    host: "postgres.esdevtest.mosip.net"
     port: 5432
     su:
       user: postgres
@@ -12,4 +12,4 @@ databases:
         name: postgres-postgresql
         key: postgres-password
     dml: 1
-    branch: develop
+    branch: develop-go
